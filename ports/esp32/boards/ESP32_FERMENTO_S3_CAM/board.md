@@ -1,0 +1,1 @@
+Adds camera support to the ESP32-S3

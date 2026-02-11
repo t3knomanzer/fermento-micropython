@@ -22,3 +22,7 @@ dependencies:
       - if: "idf_version >=5.3"
   idf:
     version: ">=5.2.0"
+  # ESP32 CAM module support
+  espressif/esp32-camera:
+    git: https://github.com/cnadler86/esp32-camera.git
+  espressif/esp_new_jpeg: "^1.0.0"

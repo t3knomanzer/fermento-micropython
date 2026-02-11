@@ -1,4 +1,28 @@
 dependencies:
+  espressif/esp32-camera:
+    dependencies:
+    - name: idf
+      version: '>=5.1'
+    source:
+      path: /home/rhenares/micropython-camera-API/esp32-camera
+      type: local
+    version: '*'
+  espressif/esp_new_jpeg:
+    component_hash: 2f06f88e94fbc781b26a9be4291ff4ffc88596c90436a1e1358a7a38296b44ae
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32
+    - esp32s2
+    - esp32s3
+    - esp32p4
+    - esp32c2
+    - esp32c3
+    - esp32c5
+    - esp32c6
+    version: 1.0.0
   espressif/mdns:
     component_hash: 46ee81d32fbf850462d8af1e83303389602f6a6a9eddd2a55104cb4c063858ed
     dependencies:
@@ -29,9 +53,11 @@ dependencies:
       type: idf
     version: 5.5.1
 direct_dependencies:
+- espressif/esp32-camera
+- espressif/esp_new_jpeg
 - espressif/mdns
 - espressif/tinyusb
 - idf
-manifest_hash: 482087bc40f0e187795a9ef9ad08ef15a585b4cdabc296c715a9d19284622150
+manifest_hash: 53fef575b90a6d343a97ae7a2ffa625d642c9dd7c7b824b1999f7f58980194ed
 target: esp32s3
 version: 2.0.0

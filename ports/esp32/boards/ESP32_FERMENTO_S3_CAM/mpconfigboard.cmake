@@ -4,5 +4,5 @@ set(SDKCONFIG_DEFAULTS
     boards/sdkconfig.base
     boards/sdkconfig.ble
     boards/sdkconfig.spiram_sx
-    boards/ESP32_FERMENTO_S3/sdkconfig.board
+    boards/ESP32_FERMENTO_S3_CAM/sdkconfig.board
 )
